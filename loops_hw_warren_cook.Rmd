@@ -192,22 +192,10 @@ ncol(powerall2)
 
 
 
-
-
-
-
-
-
-# FOR LOOOOOOOOOOP (sometimes for loops take a long time to run)
+# FOR LOOP (sometimes for loops take a long time to run)
 for (i in 1:ncol(powerall2)) {
   powerall2[,i] = automobile_power_generation(A=possible_cars$area[i], m=possible_cars$mass[i], V=speeds)
 }
-
-
-
-
-
-
 
 
 
